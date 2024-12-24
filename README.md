@@ -43,9 +43,9 @@ This product complies with the following international maritime regulations:
 ## Installation
 
 1. Clone the repository:  
-   `git clone https://github.com/ihorkoliasa/rudder-angle-indicator.git`
+   `git clone https://github.com/koliasa/Rudder-Angle-Indicator.git`
 2. Navigate to the project directory:  
-   `cd rudder-angle-indicator`
+   `cd Rudder-Angle-Indicator`
 3. Open the `index.html` file in a web browser.
 
 ## Usage
