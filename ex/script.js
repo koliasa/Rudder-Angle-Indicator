@@ -6,16 +6,9 @@ const rudderNeedle = document.querySelector(".rudder-needle");
 for (let i = -45; i <= 45; i += 15) {
   const tick = document.createElement("div");
   tick.classList.add("rudder-tick");
-
   if (i < 0) tick.classList.add("red");
   if (i > 0) tick.classList.add("green");
-
-  if (i !== 0) {
-    tick.style.transform = `rotate(${i}deg) scaleX(-1)`;
-  } else {
-    tick.style.transform = `rotate(${i}deg)`;
-  }
-
+  tick.style.transform = `rotate(${i}deg)`;
   rudderScale.appendChild(tick);
 
   const number = document.createElement("div");
