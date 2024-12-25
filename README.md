@@ -6,6 +6,8 @@
 
 The **Rudder Angle Indicator** is a digital tool for real-time visualization of a ship's rudder angle. Its interface is designed for easy use, even on touchscreen devices in demanding maritime environments.
 
+This is an [example](https://koliasa.github.io/Rudder-Angle-Indicator/) of a rudder, demonstrating the usage and functionality of the system. Feel free to explore the live demo for a better understanding of its capabilities.
+
 ## Features
 
 - Clear and responsive interface.
