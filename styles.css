@@ -17,6 +17,7 @@ body {
   position: relative;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
+  top: 20px;
 }
 
 .rudder-scale {
@@ -36,7 +37,7 @@ body {
 .rudder-number {
   position: absolute;
   color: #fff;
-  font-size: 8px;
+  font-size: 10px;
   font-family: sans-serif;
   white-space: nowrap;
   transform: translate(-50%, 0%);
@@ -82,12 +83,13 @@ body {
 }
 
 .rudder-rudder {
-  top: 105px;
+  top: 40px;
+  font-size: 8px;
 }
 
 .rudder-koliasa {
-  top: 112px;
-  font-size: 4px;
+  top: 115px;
+  font-size: 4.5px;
 }
 
 .rudder-slider-container {
@@ -112,7 +114,7 @@ input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 30px;
   height: 30px;
-  border-radius: 50%;
+  border-radius: 0;
   background: #333;
   cursor: pointer;
 }
@@ -123,6 +125,16 @@ input[type="range"]::-webkit-slider-thumb {
   display: flex;
   justify-content: space-between;
   padding: 0 2.5px;
+}
+
+.rudder-slider-center-mark {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 4px;
+  height: 10px;
+  background-color: white;
+  transform: translateX(-50%);
 }
 
 .rudder-slider-tick {
@@ -139,4 +151,44 @@ input[type="range"]::-webkit-slider-thumb {
   position: absolute;
   bottom: -15px;
   transform: translateX(-50%);
+}
+
+.rudder-point {
+  width: 0.1px;
+  height: 0.1px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  margin: 0 1px;
+}
+
+.rudder-point-red {
+  background-color: red;
+}
+
+.rudder-point-green {
+  background-color: green;
+}
+
+.rudder-point-white {
+  background-color: white;
+}
+
+.rudder-slider-dot {
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background-color: #666;
+  position: absolute;
+}
+
+.rudder-scale::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  width: 1px;
+  height: 1px;
+  background-color: rgb(232, 248, 0);
+  transform: translateX(-50%) translateY(-50%);
 }
